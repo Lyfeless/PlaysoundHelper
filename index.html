@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+    <!--
+
+        Bc JayHandBook Told Me To:
+
+        youtube.com/watch?v=dQw4w9WgXcQ
+
+    -->
+
+    <head>
+        <title>Minecraft Sound Tool | VeryLyfeless</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+    <body>
+        <header>Minecraft Playsound Helper Tool <a class=name href="https://www.twitch.tv/verylyfeless" target="_blank" >By VeryLyfeless</a></header>
+        <main>
+            <div id=wrapper>
+
+                <div id="modules">
+                    <ul>
+                        <div class="module collapse">
+                            <div class="remove"><img id="xICON" src="https://static.thenounproject.com/png/114046-200.png" width="50px" height="auto"></div>
+
+                            <div class="moduleItems">
+                                <div class="title"><p style="margin: 0;">Sound Item</p></div>
+                                <div class="sliders">
+                                    <ul>
+                                        <li>
+                                            <label for="volume">Volume</label><br>
+                                            <input type="range" min="1" max="100" value="100" class="slider" name="volume" id="volumeSlider" oninput="volumeOutput.value = volumeSlider.value">
+                                            <output name="volume", id="volumeOutput">100</output>
+                                        </li>
+                                        <li>
+                                            <label for="pitch">Pitch</label><br>
+                                            <input type="range" min=".01" max="2" value="1" class="slider" name="pitch" id="pitchSlider" step=.01 oninput="pitchOutput.value = pitchSlider.value">
+                                            <output name="pitch", id="pitchOutput">1</output>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class=dropdowns>
+                                    <ul>
+                                        <li>
+                                            <select name="category" class="dropdown">
+                                                <option value="blank"></option>
+                                                <option value="test1">Test 1</option>
+                                                <option value="test2">Test 2</option>
+                                                <option value="test3">Test 3</option>
+                                                <option value="test4">Test 4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select name="object" class="dropdown">
+                                                <option value="blank"></option>
+                                                <option value="test1">Test 1</option>
+                                                <option value="test2">Test 2</option>
+                                                <option value="test3">Test 3</option>
+                                                <option value="test4">Test 4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select name="sound" class="dropdown">
+                                                <option value="blank"></option>
+                                                <option value="test1">Test 1</option>
+                                                <option value="test2">Test 2</option>
+                                                <option value="test3">Test 3</option>
+                                                <option value="test4">Test 4</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select name="varient" class="dropdown">
+                                                <option value="random">Random</option>
+                                                <option value="test1">Test 1</option>
+                                                <option value="test2">Test 2</option>
+                                                <option value="test3">Test 3</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="plus">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="58px" height="58px" viewBox="0 0 58 58" style="enable-background:new 0 0 58 58;" xml:space="preserve"> <style type="text/css"> </style> <defs> </defs> <path class="st0" d="M29,58L29,58C13,58,0,45,0,29v0C0,13,13,0,29,0h0c16,0,29,13,29,29v0C58,45,45,58,29,58z"/> <g> <path class="st1" d="M42.8,25.3h-9.1v-9.1c0-2.3-1.9-4.2-4.2-4.2h0c-2.3,0-4.2,1.9-4.2,4.2v9.1h-9.1c-2.3,0-4.2,1.9-4.2,4.2v0 c0,2.3,1.9,4.2,4.2,4.2h9.1v9.1c0,2.3,1.9,4.2,4.2,4.2h0c2.3,0,4.2-1.9,4.2-4.2v-9.1h9.1c2.3,0,4.2-1.9,4.2-4.2v0 C47,27.2,45.1,25.3,42.8,25.3z"/> </g> </svg>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+        <footer></footer>
+
+        <script src="script.js">sdsd</script>
+    </body>
+</html>
