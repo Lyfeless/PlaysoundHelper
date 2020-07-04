@@ -71,12 +71,16 @@ select {
     background-color:rgb(50, 54, 57);
 
     padding-top: 1em;
+
+    overflow-y: auto;
 }
 
 .module {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+
+    margin-bottom: 7px;
 
     border: 2px rgb(189, 193, 198) solid;
 
@@ -168,41 +172,119 @@ svg:hover .st1 {fill:rgb(32, 33, 36);}
 svg:hover .st0 {fill:rgb(189, 193, 198);}
 
 .slider {
-    -webkit-appearance: none;
-    width: 50%;
-    height: 15px;
-    border-radius: 5px;  
-    background: rgb(189, 193, 198);
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: rgb(121, 75, 196);
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: rgb(121, 75, 196);
-    cursor: pointer;
-  }
+-webkit-appearance: none;
+width: 50%;
+height: 15px;
+border-radius: 5px;  
+background: rgb(189, 193, 198);
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
 
-  .module .sliders {
-    float: right;
-    width: 50%;
-  }
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%; 
+background: rgb(121, 75, 196);
+cursor: pointer;
+}
 
-  .module .dropdowns {
-    float: left;
-    width: 50%;
-  }
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: rgb(121, 75, 196);
+cursor: pointer;
+}
+
+.module .sliders {
+float: right;
+width: 50%;
+}
+
+.module .dropdowns {
+float: left;
+width: 50%;
+}
+
+footer {
+    position: relative;
+}
+
+#play {
+    background-color: rgb(32, 33, 36);
+    width: 140px;
+    height: 140px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    top: -55px;
+
+    border-radius: 100%;
+    border: 10px solid rgb(121, 75, 196);
+
+    overflow: hidden;
+}
+
+#tri {
+    transform: rotate(-120deg);
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 999;
+
+    position: absolute;
+    
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, 0.8));
+
+    transition: all .4s;
+}
+
+#play:hover #tri {
+    transform: rotate(0deg);
+}
+
+#play:after {
+    content: "";
+    top: -40px;
+    left: -10px;
+    width: 0px;
+    height: 170px;
+    background-color: rgb(50, 54, 57);
+    position: absolute;
+
+    transform: rotate(45deg);
+
+    transition: width .2s;
+}
+
+#play:hover:after {
+
+    width: 160px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(50, 54, 57);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(121, 75, 196);
+
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(61, 38, 98);
+}
